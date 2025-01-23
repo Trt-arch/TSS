@@ -1,0 +1,34 @@
+.buttonBox {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: row;
+}
+
+.button {
+    background: #1b2838;
+    color: #ffffff;
+    border: 1px solid #66c0f4;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  65px;
+    height: 70px;
+    padding: 0px 10px;
+    gap: 8px;
+    transition: background 0.5s;
+}
+
+.button:hover {
+    background: #66c0f4;
+    color: #1b2838;
+}
+
+.button img {
+    width: 60px;
+    margin-right: 0px;
+    align-items: center;
+}

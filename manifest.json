@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Trt-Steam Search",
+    "version": "0.1",
+    "description": "Adds Search buttons on the steam page to other websites (Fitgirl, Online-fix, Dodi, etc)",
+    "permissions": ["activeTab"],
+    "host_permissions": ["https://store.steampowered.com/app/*"],
+  
+    "content_scripts": [
+      {
+        "matches": ["https://store.steampowered.com/app/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["icons/*"],
+        "matches": ["https://store.steampowered.com/*"]
+      }
+    ]
+  }
+  
